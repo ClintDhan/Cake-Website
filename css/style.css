@@ -28,17 +28,17 @@
 }
 
 .header-nav-items a {
-    font-size: 16px;
+    font-size: 12px;
     text-decoration: none;
-    color: white;
+    color: #f1faee;
 }
 
 .header-container {
     padding-top: 1.5rem;
 }
 
-.header-container h1 {
-    color: white;
+.header-container h2 {
+    color: #f1faee;
 }
 
 .section-text {
@@ -46,13 +46,75 @@
 }
 
 .section-text h1, p {
-    color: white;
+    color: #f1faee;
 }
 
 .section-text h1 {
     letter-spacing: 5px;
 }
 
+.section-text p {
+    font-size: 1rem;
+}
+
 .section-text h1 {
     font-weight: 900;
+    font-size: 5rem;
+}
+
+span {
+    color: #BA193E;
+}
+
+.second-section {
+    height: 95vh;
+}
+
+.second-text {
+    color: rgb(77, 75, 75);
+    text-align: center;
+}
+
+.second-section {
+    width: 60vw;
+}
+
+.second-section-image {
+    background: url(/assets/chocolate-1205153_1920.jpg)no-repeat;
+    background-size: cover;
+    height: 25vh;
+}
+
+.third-section {
+    height: 100vh;
+    position: relative;
+    background: none; 
+}   
+
+.third-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(/assets/wedding-cake-5373745_1920.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;  
+    z-index: -1;
+    filter: brightness(50%);
+}
+
+.third-section-text {
+    text-align: center;
+}
+
+.third-text-title {
+    color: #f1faee;
+    font-weight: 900;
+    font-size: 5rem;
+}
+
+.fourth-section {
+    height: 100vh;
 }
