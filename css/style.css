@@ -135,3 +135,25 @@ span {
     color: black;
     text-align: justify;
 }
+
+.footer-section {
+    height: 100vh;
+    background-color: black;
+}
+
+.footer-first-flex {
+    text-align: center;
+}
+
+.footer-last-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-right {
+    text-align: right;
+}
