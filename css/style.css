@@ -63,7 +63,7 @@
 }
 
 span {
-    color: #BA193E;
+    color: #f7063e;
 }
 
 .second-section {
@@ -80,7 +80,7 @@ span {
 }
 
 .second-section-image {
-    background: url(/assets/chocolate-1205153_1920.jpg)no-repeat;
+    background: url(/assets/cake-pop-6083189_1920.jpg)no-repeat;
     background-size: cover;
     height: 25vh;
 }
@@ -117,4 +117,21 @@ span {
 
 .fourth-section {
     height: 100vh;
+    width: 75vw;
+}
+
+.image-flex img {
+    width: 16vw;
+    height: 40vh;
+}
+
+.text-grid {
+    display: grid;
+    grid-template-columns: 32vw 32vw;
+    gap: 1rem;
+}
+
+.text-grid-text {
+    color: black;
+    text-align: justify;
 }
