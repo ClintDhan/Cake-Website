@@ -3,6 +3,7 @@
     margin: 0;
     font-family: 'Open Sans';
 }
+
 .first-section {
     position: relative;
     background: none; 
@@ -25,6 +26,10 @@
 
 .active {
     opacity: .6;
+}
+
+.white {
+    color: #f1faee;
 }
 
 .header-nav-items {
@@ -204,9 +209,48 @@ span {
 
 .text-flex {
     width: 65vw;
-    text-align: justify;
+    text-align: center;
+    border-bottom: 1px solid rgba(28, 28, 37, 0.5);
 }
 
 .text-flex p {
     color: rgb(77, 75, 75);
+}
+
+.menu-second-section {
+    height: 80vh;
+}
+
+.menu-cake-section {
+    text-align: center;
+    color: #1c1c25;
+    width: 65vw;
+    padding: 0;
+}
+
+.product-serving p {
+    color: #1c1c25;
+    font-weight: 700;
+}
+
+.product-availability p {
+    color: #1c1c25;
+}
+
+.product-list div {
+    text-align: left;
+}
+
+.product-list h5 {
+    font-size: 0.9rem;
+    font-weight: 800;
+    margin-bottom: 0.2rem;
+}
+
+.product-list p {
+    font-size: 0.9rem;
+}
+
+.product-list h5, p {
+    color: #1c1c25;
 }
