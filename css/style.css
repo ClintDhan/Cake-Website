@@ -16,7 +16,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: url(/assets/wedding-cake-5373757_1920.jpg) no-repeat center center;
+    background: url(../assets/wedding-cake-5373757_1920.jpg) no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
     filter: brightness(50%);
@@ -84,7 +84,7 @@ span {
 }
 
 .second-section-image {
-    background: url(/assets/cake-pop-6083189_1920.jpg)no-repeat;
+    background: url(../assets/cake-pop-6083189_1920.jpg)no-repeat;
     background-size: cover;
     height: 25vh;
 }
@@ -102,7 +102,7 @@ span {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url(/assets/wedding-cake-5373745_1920.jpg) no-repeat center center;
+    background: url(../assets/wedding-cake-5373745_1920.jpg) no-repeat center center;
     background-size: cover;
     background-attachment: fixed;  
     z-index: -1;
@@ -195,5 +195,18 @@ span {
     left: 0;
     width: 100%;
     height: 100%;
-    
+    background: url(../assets/pastry-7030039_1920.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: brightness(50%);
+    z-index: -1;
+}
+
+.text-flex {
+    width: 65vw;
+    text-align: justify;
+}
+
+.text-flex p {
+    color: rgb(77, 75, 75);
 }
