@@ -266,3 +266,35 @@ span {
 .word-spacing-class {
     word-spacing: 0.3rem;
 }
+
+/* contact section */
+.contact-first-section {
+    position: relative;
+    background: none;
+    height: 100vh;
+}
+
+.contact-first-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url(../assets/people-2595757_1920.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: brightness(50%);
+    z-index: -1;
+}
+
+.contact-maploc-section {
+    height: 100vh;
+}
+
+.set-width {
+    width: 65vw;
+    padding: 0;
+    color: #1c1c25;
+    text-align: center;
+}
