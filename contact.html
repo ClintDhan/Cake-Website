@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!-- Option 1: Include in HTML -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -21,16 +24,25 @@
         <div class="first-section-header container">
             <div class="d-flex justify-content-between header-container">
                 <h2><span>C</span>LNTY</h2>
-                <div class="header-nav-items d-flex justify-content-around align-items-center">
-                    <a href="index.html">HOME</a>
-                    <a href="menu.html">MENU</a>
-                    <a href="contact.html" class="active">CONTACT</a>
+                <div class="header-nav-items" id="myNav">                   
+                        <a href="index.html">HOME</a>
+                        <a href="menu.html">MENU</a>
+                        <a href="contact.html" class="active">CONTACT</a>
+                        <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+                            <i class="bi bi-list burger" ></i>
+                        </a>
+                    
                 </div>
+            </div>
+            <div class="toggle">
+                <a href="index.html">HOME</a> <br>
+                <a href="menu.html">MENU</a> <br>
+                <a href="contact.html">CONTACT</a>
             </div>
         </div>
         <div class="section-text d-flex flex-column justify-content-center align-items-center">
             <h1 style="text-align: center;">CONTACT</h1>
-            
+
         </div>
     </div>
 
@@ -42,7 +54,10 @@
                 <p>Rosario, Agusan del Sur</p>
             </div>
             <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d246.71325186051772!2d126.01602933310693!3d8.36106552884294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1729312761055!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d246.71325186051772!2d126.01602933310693!3d8.36106552884294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1729312761055!5m2!1sen!2sph"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </div>
@@ -54,21 +69,25 @@
         <div class="contact-text-section mt-5 mb-5">
             <div class="contact-text-spacing">
                 <h5>Need to place a special order?</h3>
-                <p>Call us at 09123456789. Please note that all special orders must be made at least 48 hours in advance. Special orders are limited to items listed on our menu, excluding daily bread specials. All other baked goods are available on a first-come, first-served basis.</p>
+                    <p>Call us at 09123456789. Please note that all special orders must be made at least 48 hours in
+                        advance. Special orders are limited to items listed on our menu, excluding daily bread specials.
+                        All other baked goods are available on a first-come, first-served basis.</p>
             </div>
 
             <div class="contact-text-spacing">
                 <h5>For media inquiries and public relations</h3>
-                <p>please contact us at the email address below for any questions, photo requests, or PR matters:
-                    marketPH@email.com</p>
+                    <p>please contact us at the email address below for any questions, photo requests, or PR matters:
+                        marketPH@email.com</p>
             </div>
             <div class="contact-text-spacing">
                 <h5>CAREERS</h5>
-                <p>Explore open positions on our Careers Page. We’re excited about the possibility of you joining our growing team!</p>
+                <p>Explore open positions on our Careers Page. We’re excited about the possibility of you joining our
+                    growing team!</p>
             </div>
             <div class="contact-text-spacing">
                 <h5>GIFT CARDS</h5>
-                <p>Head to our Gift Cards Page to purchase a gift card, valid at all eight of our restaurant locations. You can also buy gift cards directly at any of our locations.</p>
+                <p>Head to our Gift Cards Page to purchase a gift card, valid at all eight of our restaurant locations.
+                    You can also buy gift cards directly at any of our locations.</p>
             </div>
             <div class="contact-text-spacing">
                 <h5>LOYALTY PROGRAM</h5>
@@ -102,6 +121,12 @@
         </div>
     </div>
 
-    
+
 </body>
+<script>
+    function navFunction() {
+        document.querySelector('.toggle').classList.toggle('show');
+    }
+</script>
+
 </html>
