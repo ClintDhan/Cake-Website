@@ -127,6 +127,11 @@
     function navFunction() {
         document.querySelector('.toggle').classList.toggle('show');
     }
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 800) {
+            toggleMenu.classList.remove('show');
+        }
+    });
 </script>
 
 </html>
