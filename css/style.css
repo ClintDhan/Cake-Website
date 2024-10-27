@@ -67,8 +67,9 @@
     letter-spacing: 5px;
 }
 
-.section-text p {
-    font-size: 1rem;
+.home-section-subtext {
+    font-size: 1.3rem;
+    text-align: center;
 }
 
 .section-text h1 {
@@ -169,8 +170,9 @@ span {
 }
 
 .footer-section {
-    height: 80vh;
+    height: auto;
     background-color: #1c1c25;
+    padding-bottom: 5vh;
 }
 
 .footer-first-flex {
@@ -440,6 +442,21 @@ iframe {
 }
     .section-title {
         font-size: 3rem;
+    }
+   .home-section-subtext{
+    font-size: 1rem;
+   }
+}
+
+@media screen and (max-width: 592px) {
+    .section-text h1 {
+        font-size: 2.5rem;
+}
+    .section-title {
+        font-size: 2.5rem;
+    }
+    .home-section-subtext{
+        font-size: 0.9rem;
     }
 }
 
