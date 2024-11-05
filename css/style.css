@@ -263,8 +263,10 @@ span {
 }
 
 .text-flex {
-    width: 65vw;
-    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
     border-bottom: 1px solid rgba(28, 28, 37, 0.5);
 }
 
@@ -376,6 +378,7 @@ iframe {
 .contact-text-section h5 {
     text-transform: uppercase;
     font-weight: 800;
+    font-size: 1.5rem;
 }
 
 .contact-text-spacing {
@@ -389,8 +392,8 @@ iframe {
     display: none;
 }
 .burger {
-    height: 50px;
-    width: 50px;
+    height: 200px;
+    width: 200px;
 }
 
 .toggle a {
@@ -412,9 +415,9 @@ iframe {
     height: auto;
 }
 
-.container {
+/* .container {
     border: 1px solid red;
-}
+} */
 
 /* responsiveness */
 
@@ -511,6 +514,11 @@ iframe {
     .product-availability p {
         font-size: 0.9rem;
     }
+    .text-flex {
+        text-align: center;
+       }
+    /* CONTACT SECTION */
+    
 
 }
 
@@ -535,6 +543,16 @@ iframe {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 30vh);
    }
+   .text-flex {
+    text-align: justify;
+   }
+   .contact-text-section h5 {
+    font-size: 1rem;
+   }
+   .contact-text-section p {
+    font-size: 0.9rem;
+   }
+   
 }
 
 /* @media screen and (min-width: 766px) and (max-width: 592px){
@@ -553,10 +571,19 @@ iframe {
     .second-section{
         width: auto;
     }
+    .second-text {
+        text-align: justify;
+    }
     .fourth-section {
         width: auto;
     }
     .menu-cake-section {
+        width: auto;
+    }
+    .contact-maploc-section {
+        width: auto;
+    }
+    .contact-us-section {
         width: auto;
     }
 }

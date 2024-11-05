@@ -11,6 +11,7 @@
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -19,14 +20,23 @@
         <div class="first-section-header container">
             <div class="d-flex justify-content-between header-container">
                 <h2><span>C</span>LNTY</h2>
-                <div class="header-nav-items d-flex justify-content-around align-items-center">
+                <div class="header-nav-items" id="myNav">
                     <a href="index.html">HOME</a>
                     <a href="menu.html" class="active">MENU</a>
                     <a href="contact.html">CONTACT</a>
+                    <a class="icon" onclick="navFunction()">
+                        <i class="bi bi-list burger" ></i>
+                    </a>
                 </div>
             </div>
+            <div class="toggle">
+                <a href="index.html">HOME</a> <br>
+                <a href="menu.html">MENU</a> <br>
+                <a href="contact.html">CONTACT</a>
+            </div>
         </div>
-        <div class="section-text d-flex flex-column justify-content-center align-items-center">
+        
+        <div class="container section-text d-flex flex-column justify-content-center align-items-center">
             <h1 style="text-align: center;">CLINTOY CAKE<br><span>MENU</span></h1>
             <p style="text-align: center;" class="white word-spacing-class">Our team puts in great effort every day to offer a diverse selection of <br>
                 products that cater to every taste—it's just how we operate.</p>
@@ -278,5 +288,15 @@
     </div>
 
 </body>
+<script>
+    function navFunction() {
+        document.querySelector('.toggle').classList.toggle('show');
+    }
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 800) {
+            toggleMenu.classList.remove('show');
+        }
+    });
+</script>
 
 </html>
