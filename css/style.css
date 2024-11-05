@@ -440,6 +440,19 @@ iframe {
     }
 }
 @media screen and (max-width: 990px) {
+    .first-section::before {
+        background-attachment: scroll;
+    }
+    .third-section::before {
+        background-attachment: scroll;
+    }
+    .menu-first-section::before {
+        background-attachment: scroll;
+    }
+    .contact-first-section::before {
+        background-attachment: scroll;
+    }
+    
     .section-text h1 {
         font-size: 4rem;
     }
