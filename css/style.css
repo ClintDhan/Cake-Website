@@ -53,6 +53,8 @@
 
 .header-container h2 {
     color: #f1faee;
+    margin-bottom: 0;
+    margin-top: 0.5rem;
 }
 
 .section-text {
@@ -392,8 +394,7 @@ iframe {
     display: none;
 }
 .burger {
-    height: 200px;
-    width: 200px;
+    font-size: 1.5rem;
 }
 
 .toggle a {
@@ -470,7 +471,10 @@ iframe {
         display: none;
     }
     .header-nav-items a.icon{
-        display: block;
+        display: flex;
+    }
+    .header-nav-items {
+        justify-content: end;
     }
 
     /* footer */
